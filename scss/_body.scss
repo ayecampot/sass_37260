@@ -1,0 +1,48 @@
+#bodyIndex {
+    font-family: "Raleway", sans-serif;
+  }
+  
+  .titulo {
+    color: $colorTitulos;
+    font-family: $fuentes;
+    line-height: 2;
+    font-size: 200%;
+  }
+  
+  .titulo2 {
+    color: #8a413f;
+    font-family: "Roboto", sans-serif;
+    line-height: 2;
+    font-size: 120%;
+  }
+  
+  .parrafo {
+    text-align: justify;
+    color: grey;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.5;
+  }
+  
+  /*ESTO ES EL MENU*/
+  
+  .menu {
+    background-color: #6d8c9a;
+    min-height: 50px;
+  
+    .nav-link {
+      color: #fff !important;
+      padding: 15px !important;
+      font-size: 13px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 1px;
+      padding: 20px;
+  
+      &:hover {
+          color: #90bccf !important;
+        }
+    }
+   
+  }
+  

@@ -1,0 +1,35 @@
+1- En la raiz de mi proyecto
+2- CMD ---- npm init
+3- CMD ---- npm install -D node-sass nodemon
+4- EDITOR---- Abrir package.json
+5- EDITOR---- Agregar los sgt comandos donde estan los scripts --- 
+		"build-css": "node-sass --include-path scss scss/main.scss css/main.css",
+		"watch-css": "nodemon -e scss -x \"npm     run build-css\""
+6- CMD ---- npm run build-css
+7- CMD ---- npm run watch-css
+
+8- CMD --- npm install bootstrap
+
+En tu scss
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+Link purge css
+https://purgecss.com/CLI.html#installation
+
+1- CMD ---- npm i -g purgecss
+2- EDITOR-- script en package.json
+	"build":"purgecss --css css/main.css --content index.html -o css/reducido.css"
+4- CMD --- npm run build
+
+
+
+------------------------------------------------------------------------------------------
+Editando sass de Bootstrap 
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "build-bt": "node-sass --include-path scss node_modules/bootstrap/scss/bootstrap.scss css/bootstrap.css",
+    "watch-bt": "nodemon -e scss -x \"npm run build-bt\""
+  }
